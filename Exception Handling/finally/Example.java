@@ -8,9 +8,7 @@ class Example
       catch(ArithmeticException e){
          System.out.println("Number should not be divided by zero");
       }  
-      /* Finally block will always execute
-       * even if there is no exception in try block
-       */
+  
       finally{
 	 System.out.println("This is finally block");
       }  
