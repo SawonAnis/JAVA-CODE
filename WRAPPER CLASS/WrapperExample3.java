@@ -9,7 +9,7 @@ double d=60.0D;
 char c='a';  
 boolean b2=true;  
   
-//Autoboxing: Converting primitives into objects  
+
 Byte byteobj=b;  
 Short shortobj=s;  
 Integer intobj=i;  
@@ -29,8 +29,7 @@ System.out.println("Float object: "+floatobj);
 System.out.println("Double object: "+doubleobj);  
 System.out.println("Character object: "+charobj);  
 System.out.println("Boolean object: "+boolobj);  
-  
-//Unboxing: Converting Objects to Primitives  
+
 byte bytevalue=byteobj;  
 short shortvalue=shortobj;  
 int intvalue=intobj;  
@@ -40,7 +39,7 @@ double doublevalue=doubleobj;
 char charvalue=charobj;  
 boolean boolvalue=boolobj;  
   
-//Printing primitives  
+
 System.out.println("---Printing primitive values---");  
 System.out.println("byte value: "+bytevalue);  
 System.out.println("short value: "+shortvalue);  
