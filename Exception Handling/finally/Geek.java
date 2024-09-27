@@ -1,7 +1,6 @@
-// A Java program to demonstrate finally. 
+ 
 class Geek { 
-    // A method that throws an exception and has finally. 
-    // This method will be called inside try-catch. 
+
     static void A() 
     { 
         try { 
@@ -14,8 +13,7 @@ class Geek {
         } 
     } 
   
-    // This method also calls finally. This method 
-    // will be called outside try-catch. 
+
     static void B() 
     { 
         try { 
