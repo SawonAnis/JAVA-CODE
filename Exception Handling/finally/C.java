@@ -5,7 +5,7 @@ class C {
         try { 
             System.out.println("In try block"); 
             int z = k / 0; 
-            // Carefully see flow dosen't come here 
+         
             System.out.println("Flow dosen't came here"); 
         } 
   
