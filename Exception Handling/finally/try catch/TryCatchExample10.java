@@ -8,10 +8,10 @@ public class TryCatchExample10 {
           
         PrintWriter pw;  
         try {  
-            pw = new PrintWriter("jtp.txt"); //may throw exception   
+            pw = new PrintWriter("jtp.txt"); 
             pw.println("saved");  
         }  
-// providing the checked exception handler  
+
  catch (FileNotFoundException e) {  
               
             System.out.println(e);  
