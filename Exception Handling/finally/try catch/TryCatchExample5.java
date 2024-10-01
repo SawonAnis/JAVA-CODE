@@ -5,10 +5,10 @@ public class TryCatchExample5 {
         {  
         int data=50/0; 
         }  
-             // handling the exception  
+         
         catch(Exception e)  
         {  
-                  // displaying the custom message  
+         
             System.out.println("Can't divided by zero");  
         }  
     }  
