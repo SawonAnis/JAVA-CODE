@@ -1,7 +1,4 @@
-/* In this program we are checking the Student age
- * if the student age<12 and weight <40 then our program 
- * should return that the student is not eligible for registration.
- */
+
 public class ThrowExample {
    static void checkEligibilty(int stuage, int stuweight){ 
       if(stuage<12 && stuweight<40) {
