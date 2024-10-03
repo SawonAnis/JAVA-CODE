@@ -6,12 +6,12 @@ public class TryCatchExample6 {
         int data;  
         try  
         {  
-        data=i/j; //may throw exception   
+        data=i/j; 
         }  
-            // handling the exception  
+     
         catch(Exception e)  
         {  
-             // resolving the exception in catch block  
+        
             System.out.println(i/(j+2));  
         }  
     }  
