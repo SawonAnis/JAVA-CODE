@@ -9,6 +9,6 @@ public class MyClass {
   }
 
   public static void main(String[] args) {
-    checkAge(15); // Set age to 15 (which is below 18...)
+    checkAge(15); 
   }
 }
