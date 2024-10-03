@@ -9,7 +9,7 @@ class ThrowExcep
         catch(NullPointerException e) 
         { 
             System.out.println("Caught inside fun()."); 
-            throw e; // rethrowing the exception 
+            throw e; 
         } 
     } 
   
