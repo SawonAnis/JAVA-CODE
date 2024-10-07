@@ -12,7 +12,7 @@ class A
 class B extends A
 {
 	B()
-	{   //super();
+	{  
 		System.out.println("I am from class B constructor");
 	}
 	int num = 10;
@@ -26,7 +26,7 @@ class C extends B
 {
 	C()
 	{
-		//super();
+		
 		System.out.println("I am from class C constructor");
 	}
 	int num = 20;
