@@ -1,36 +1,41 @@
-import java.io.*;
-public class Employee {
+class Employee
+{   
+    public String empName;
+    public int empSalary;
+    public String address;
 
-   String name;
-   int age;
-   String designation;
-   double salary;
+    //default constructor of the class
+    public Employee()
+    {
+    	//this will call the constructor with String param
+        this("Chaitanya");
+    }
 
-   // This is the constructor of the class Employee
-   public Employee(String name) {
-      this.name = name;
-   }
+    public Employee(String name)
+    {
+    	//call the constructor with (String, int) param
+    	this(name, 120035);
+    }
+    public Employee(String name, int sal)
+    {
+    	//call the constructor with (String, int, String) param
+    	this(name, sal, "Gurgaon");
+    }
+    public Employee(String name, int sal, String addr)
+    {
+    	this.empName=name;
+    	this.empSalary=sal;
+    	this.address=addr;
+    }
 
-   // Assign the age of the Employee  to the variable age.
-   public void empAge(int empAge) {
-      age = empAge;
-   }
-
-   /* Assign the designation to the variable designation.*/
-   public void empDesignation(String empDesig) {
-      designation = empDesig;
-   }
-
-   /* Assign the salary to the variable	salary.*/
-   public void empSalary(double empSalary) {
-      salary = empSalary;
-   }
-
-   /* Print the Employee details */
-   public void printEmployee() {
-      System.out.println("Name:"+ name );
-      System.out.println("Age:" + age );
-      System.out.println("Designation:" + designation );
-      System.out.println("Salary:" + salary);
-   }
+    void disp() {
+    	System.out.println("Employee Name: "+empName);
+    	System.out.println("Employee Salary: "+empSalary);
+    	System.out.println("Employee Address: "+address);
+    }
+    public static void main(String[] args)
+    {
+        Employee obj = new Employee();
+        obj.disp();
+    }
 }
