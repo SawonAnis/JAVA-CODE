@@ -1,5 +1,4 @@
-// Java program for Method overridding 
-  
+
 class Parent { 
   
     void Print() 
