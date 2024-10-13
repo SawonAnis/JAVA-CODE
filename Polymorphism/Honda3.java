@@ -6,6 +6,6 @@ class Honda3 extends Bike{
   
  public static void main(String args[]){  
   Bike obj=new Honda3();  
-  System.out.println(obj.speedlimit);//90  
+  System.out.println(obj.speedlimit);
 }
 }  
