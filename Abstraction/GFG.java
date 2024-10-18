@@ -1,6 +1,6 @@
 interface Vehicle { 
       
-    // all are the abstract methods. 
+ 
     void changeGear(int a); 
     void speedUp(int a); 
     void applyBrakes(int a); 
@@ -64,8 +64,8 @@ class GFG {
       
     public static void main (String[] args) { 
       
-        // creating an inatance of Bicycle  
-        // doing some operations  
+    
+ 
         Bicycle bicycle = new Bicycle(); 
         bicycle.changeGear(2); 
         bicycle.speedUp(3); 
@@ -73,8 +73,7 @@ class GFG {
           
         System.out.println("Bicycle present state :"); 
         bicycle.printStates(); 
-          
-        // creating instance of the bike. 
+
         Bike bike = new Bike(); 
         bike.changeGear(1); 
         bike.speedUp(4); 
