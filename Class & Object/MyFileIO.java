@@ -5,7 +5,7 @@ class MyFileIo
 {
 	public static void main(String [] args)throws Exception
 	{
-		///Input functions
+	
 		Scanner scan          = new Scanner(System.in);
 		InputStreamReader isr = new InputStreamReader(System.in);
 		BufferedReader bfr    = new BufferedReader(isr);
@@ -16,10 +16,10 @@ class MyFileIo
 		File file = new File ("Input.txt");///Creating a new File
 		file.createNewFile();
 		
-		///Writing in to file............................
-		FileWriter writer = new FileWriter(file);//
+	
+		FileWriter writer = new FileWriter(file);
      
-		///Conditions for continuing writing in file
+	
 		System.out.println("Input your sentence!");
         while(choice == 'y')
 		{
@@ -32,22 +32,18 @@ class MyFileIo
 		}	
 
         		
-		 ///writing into file
+	
 		 writer.write(s);///???
 		 writer.flush();
 		 writer.close();
-	     
-		 ///Reading from file...............................
+
 		 FileReader reader  = new FileReader(file);
 		 BufferedReader bfl = new BufferedReader(reader);
-		 
-		 ///variables for file reading
+
 		 
 		 String a= "";
 		 
-		 ///variables for different condition in file 
-		 
-		 ///variables for file reading 
+
 			
 			int vowel=0;
 			int consonent=0;
@@ -88,9 +84,6 @@ class MyFileIo
 				}
 				
                  word=word + 1;
-				///counting alphabet
-				total=vowel+consonent;
-				///counting lines
 				
                 line=line+1;
 				
@@ -111,7 +104,6 @@ class MyFileIo
 			reader.close();
 			
 			
-		/// writiing into new file called output
 		
 
 			
