@@ -1,9 +1,9 @@
 public class StaticClassExample{
 private static String str= "Edureka";
-//Static class
+
 static class MyNestedClass{
-//non-static method
-public void disp(){
+
+  public void disp(){
 System.out.println(str);
 }
 }
