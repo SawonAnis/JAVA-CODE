@@ -1,27 +1,21 @@
 class JavaExample2{
-  static int i = 100;
-  static String s = "Beginnersbook";
-
-  static void display()
-  {
-     System.out.println("i:"+i);
-     System.out.println("i:"+s);
+   static int num;
+   static String mystr;
+   //First Static block
+   static{
+      System.out.println("Static Block 1");
+      num = 68;
+      mystr = "Block1";
+  } 
+  //Second static block
+  static{
+      System.out.println("Static Block 2");
+      num = 98;
+      mystr = "Block2";
   }
-
-
-  void funcn()
-  {
-
-      display();
-  }
-
   public static void main(String args[])
   {
-	  JavaExample2 obj = new JavaExample2();
-
-	  obj.funcn();
-	  
-
-      display();
+      System.out.println("Value of num: "+num);
+      System.out.println("Value of mystr: "+mystr);
    }
 }
