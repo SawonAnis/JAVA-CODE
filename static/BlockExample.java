@@ -1,10 +1,10 @@
-// Java program to demonstrate the use of static blocks
+
 public class BlockExample{
-// static variable
+
 static int j = 10;
 static int n;
  
-// static block
+
 static {
 System.out.println("Static block initialized.");
 n = j * 8;
