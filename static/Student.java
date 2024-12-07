@@ -1,31 +1,24 @@
-
+//Java Program to demonstrate the use of static variable  
 class Student{  
-     int rollno;  
-     String name;  
-     static String college = "ITS";  
- 
-     static void change(){  
-     college = "BBDIT";  
-     }  
-
-     Student(int r, String n){  
-     rollno = r;  
-     name = n;  
-     }  
- 
-     void display(){System.out.println(rollno+" "+name+" "+college);}  
+   int rollno;//instance variable  
+   String name;  
+   static String college ="ITS";//static variable  
+   //constructor  
+   Student(int r, String n){  
+   rollno = r;  
+   name = n;  
+   }  
+   //method to display the values  
+   void display (){System.out.println(rollno+" "+name+" "+college);}  
 }  
- 
-public class TestStaticMethod{  
-    public static void main(String args[]){  
-    Student.change();//calling change method  
-  
-    Student s1 = new Student(111,"Karan");  
-    Student s2 = new Student(222,"Aryan");  
-    Student s3 = new Student(333,"Sonoo");  
-  
-    s1.display();  
-    s2.display();  
-    s3.display();  
-    }  
+//Test class to show the values of objects  
+public class TestStaticVariable1{  
+ public static void main(String args[]){  
+ Student s1 = new Student(111,"Karan");  
+ Student s2 = new Student(222,"Aryan");  
+ //we can change the college of all objects by the single line of code  
+ //Student.college="BBDIT";  
+ s1.display();  
+ s2.display();  
+ }  
 }  
